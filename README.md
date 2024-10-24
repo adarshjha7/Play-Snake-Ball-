@@ -1,4 +1,3 @@
-Here's the edited version of the README file with the important sentences **bolded**:
 
 ---
 
