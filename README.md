@@ -1,4 +1,27 @@
 
+
+========================  
+**Play-Snake-Ball**  
+========================  
+Its a game developed with 2 main components : 
+
+**Board Class:**
+* **This class extends JPanel and is responsible for the game's main functionality, including rendering graphics and handling game logic.**
+Game Components:
+* **Images**: Loads images for the snake's head, body, and the apple using the loadImages() method.
+* **Game State:** Maintains the state of the game, including the snake's position, direction, and whether the game is ongoing.
+* **Movement:** Handles the movement of the snake based on user input and checks for collisions with itself or the boundaries of the game area.
+* **Ball Location:** Randomly places apples on the board, and if the snake eats an apple, it grows in size.
+* **Game Over Logic:** Checks for collision conditions and displays a "Game Over" message when the game ends.
+* **Timer:** Uses a Timer to create the game's refresh rate, calling the actionPerformed method at regular intervals.
+
+**SnakeGame Class:**
+**This class extends JFrame and serves as the main window for the game.**
+* It initializes the **game window**, adds the **Board component**, and makes the window visible.
+* Main Method: This is the entry point of the application, where an instance of SnakeGame is created and displayed.
+
+
+
 ---
 
 ========================  
@@ -21,21 +44,23 @@ java -jar "SnakeGame.jar"
 * Only **JAR files** are copied to the `lib` folder.  
   If the classpath contains other types of files or folders, these files (folders) are not copied.
 * If a library on the project's classpath also has a **Class-Path element** specified in the manifest, the content of the **Class-Path element** has to be on the project's runtime path.
-* To set a **main class** in a standard Java project...
+* To set a main class in a standard Java project, right-click the project node
+in the Projects window and choose Properties. Then click Run and enter the
+class name in the Main Class field. Alternatively, you can manually type the
+class name in the manifest Main-Class element....
 
 ---
+Notes:
 
-This version highlights key parts related to the build, distribution, and important instructions for running the application.# **PyPhisher Phishing Attack Documentation**
-
-#### This repository documents my use of the PyPhisher tool to simulate phishing attacks on my own system. I utilized the Gmail and Instagram options provided by PyPhisher.
-
-This README includes all the steps from installation to execution, along with screenshots of each step.
-
-## **Installation**
-
-Follow these steps to set up PyPhisher:
-
-```bash
-git clone https://github.com/KasRoudra/PyPhisher.git
-cd PyPhisher
-pip install -r requirements.txt
+* If two JAR files on the project classpath have the same name, only the first
+JAR file is copied to the lib folder.
+* Only JAR files are copied to the lib folder.
+If the classpath contains other types of files or folders, these files (folders)
+are not copied.
+* If a library on the projects classpath also has a Class-Path element
+specified in the manifest,the content of the Class-Path element has to be on
+the projects runtime path.
+* To set a main class in a standard Java project, right-click the project node
+in the Projects window and choose Properties. Then click Run and enter the
+class name in the Main Class field. Alternatively, you can manually type the
+class name in the manifest Main-Class element.
